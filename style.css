@@ -8,7 +8,7 @@
 
 :root {
   --primary-color: #08daffe3;
-  --text-color: #727171;
+  --text-color: #383737;
 }
 
 html {
@@ -17,8 +17,9 @@ html {
 
 body {
   font-family: Inter, sans-serif;
-  background-color: white;
-  color: white;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
 }
 
 /*common styles*/
@@ -66,9 +67,10 @@ a {
   margin: 0 auto;
   display: grid;
   padding: 5rem;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.733); /* Add some transparency */
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  border-radius: 10px; /* Optional: Add rounded corners */
 }
 
 @media only screen and (max-width=768px) {
@@ -129,14 +131,15 @@ a {
 
 .profile_last_name {
   color: var(--primary-color);
-  font-weight: 700;
+  font-weight: 800;
   font-size: clamp(2.5rem, 15vw, 7rem);
   text-transform: uppercase;
   display: block;
 }
 
 .profile_title {
-  font-size: 1.5rem;
+  color: rgb(0,0,0);
+  font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
 }
